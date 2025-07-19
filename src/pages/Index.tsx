@@ -81,10 +81,7 @@ const Index = () => {
                 <br />
                 <span className="text-blue-200">недоступные в России</span>
               </h2>
-              <p className="text-xl mb-8 text-blue-100">
-                Получите доступ к мировой литературе с доставкой из Европы, США и других стран. 
-                Эксклюзивные издания, которые нельзя купить в российских магазинах.
-              </p>
+              <p className="text-xl mb-8 text-blue-100">Получите доступ к мировой литературе с доставкой из Европы, Дубай и других стран. Эксклюзивные издания, которые нельзя купить в российских магазинах</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
                   Смотреть каталог
