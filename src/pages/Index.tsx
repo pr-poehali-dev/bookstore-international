@@ -43,13 +43,13 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <Icon name="Globe" size={24} className="text-blue-600" />
+              <Icon name="Globe" size={24} className="text-rose-500" />
               <h1 className="text-xl font-semibold text-slate-900">Global Reads
 </h1>
             </div>
@@ -72,22 +72,22 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-20">
+      <section className="bg-gradient-to-r from-rose-400 to-rose-500 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
                 Книги из других стран
                 <br />
-                <span className="text-blue-200">недоступные в России</span>
+                <span className="text-rose-100">недоступные в России</span>
               </h2>
-              <p className="text-xl mb-8 text-blue-100">Получите доступ к мировой литературе с доставкой из Европы, Дубай и других стран. Эксклюзивные издания, которые нельзя купить в российских магазинах</p>
+              <p className="text-xl mb-8 text-rose-50">Получите доступ к мировой литературе с доставкой из Европы, Дубай и других стран. Эксклюзивные издания, которые нельзя купить в российских магазинах</p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+                <Button size="lg" className="bg-white text-rose-500 hover:bg-rose-50">
                   Смотреть каталог
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-rose-500">
                   Узнать о доставке
                 </Button>
               </div>
@@ -100,7 +100,7 @@ const Index = () => {
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg">
                 <div className="flex items-center space-x-2">
-                  <Icon name="Truck" size={20} className="text-blue-600" />
+                  <Icon name="Truck" size={20} className="text-rose-500" />
                   <span className="text-sm font-medium text-slate-900">Доставка 14-21 день</span>
                 </div>
               </div>
@@ -117,8 +117,8 @@ const Index = () => {
             {categories.map((category, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow cursor-pointer group">
                 <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-100 transition-colors">
-                    <Icon name={category.icon} size={24} className="text-blue-600" />
+                  <div className="w-12 h-12 bg-rose-50 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-rose-100 transition-colors">
+                    <Icon name={category.icon} size={24} className="text-rose-500" />
                   </div>
                   <h4 className="font-semibold text-slate-900 mb-2">{category.name}</h4>
                   <p className="text-sm text-slate-600">{category.count} книг</p>
@@ -160,7 +160,7 @@ const Index = () => {
                   <h4 className="font-semibold text-slate-900 mb-1">{book.title}</h4>
                   <p className="text-sm text-slate-600 mb-4">{book.author}</p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-blue-600">{book.price}</span>
+                    <span className="text-lg font-bold text-rose-500">{book.price}</span>
                     <Button size="sm">
                       <Icon name="ShoppingCart" size={14} className="mr-2" />
                       В корзину
@@ -174,51 +174,51 @@ const Index = () => {
       </section>
 
       {/* International Delivery */}
-      <section className="py-16 bg-slate-900 text-white">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-3xl font-bold mb-6">Международная доставка</h3>
-              <p className="text-slate-300 mb-8 text-lg">
+              <h3 className="text-3xl font-bold mb-6 text-slate-900">Международная доставка</h3>
+              <p className="text-slate-600 mb-8 text-lg">
                 Мы работаем с надёжными логистическими партнёрами для доставки книг 
                 из Европы, США, Канады и других стран прямо к вам домой.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <Icon name="Package" size={20} className="text-blue-400" />
+                  <Icon name="Package" size={20} className="text-rose-300" />
                   <span>Безопасная упаковка для международной пересылки</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Icon name="Shield" size={20} className="text-blue-400" />
+                  <Icon name="Shield" size={20} className="text-rose-300" />
                   <span>Страхование всех посылок</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Icon name="Clock" size={20} className="text-blue-400" />
+                  <Icon name="Clock" size={20} className="text-rose-300" />
                   <span>Доставка от 14 до 21 рабочего дня</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Icon name="CreditCard" size={20} className="text-blue-400" />
+                  <Icon name="CreditCard" size={20} className="text-rose-300" />
                   <span>Оплата российскими картами</span>
                 </div>
               </div>
             </div>
-            <div className="bg-slate-800 p-8 rounded-lg">
-              <h4 className="text-xl font-semibold mb-6">Стоимость доставки</h4>
+            <div className="bg-white p-8 rounded-lg border border-rose-100 shadow-lg">
+              <h4 className="text-xl font-semibold mb-6 text-slate-900">Стоимость доставки</h4>
               <div className="space-y-4">
-                <div className="flex justify-between py-3 border-b border-slate-700">
-                  <span>Европа (1-3 книги)</span>
-                  <span className="font-semibold">от 1,200₽</span>
+                <div className="flex justify-between py-3 border-b border-rose-100">
+                  <span className="text-slate-700">Европа (1-3 книги)</span>
+                  <span className="font-semibold text-rose-600">от 1,200₽</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-slate-700">
-                  <span>США/Канада (1-3 книги)</span>
-                  <span className="font-semibold">от 1,800₽</span>
+                <div className="flex justify-between py-3 border-b border-rose-100">
+                  <span className="text-slate-700">США/Канада (1-3 книги)</span>
+                  <span className="font-semibold text-rose-600">от 1,800₽</span>
                 </div>
                 <div className="flex justify-between py-3">
-                  <span>Другие страны</span>
-                  <span className="font-semibold">от 2,200₽</span>
+                  <span className="text-slate-700">Другие страны</span>
+                  <span className="font-semibold text-rose-600">от 2,200₽</span>
                 </div>
               </div>
-              <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">
+              <Button className="w-full mt-6 bg-rose-500 hover:bg-rose-600">
                 Рассчитать доставку
               </Button>
             </div>
@@ -232,7 +232,7 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Icon name="Globe" size={20} className="text-blue-600" />
+                <Icon name="Globe" size={20} className="text-rose-500" />
                 <span className="font-semibold text-slate-900">International Books</span>
               </div>
               <p className="text-slate-600 text-sm">
