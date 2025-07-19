@@ -50,7 +50,8 @@ const Index = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Icon name="Globe" size={24} className="text-blue-600" />
-              <h1 className="text-xl font-semibold text-slate-900">International Books</h1>
+              <h1 className="text-xl font-semibold text-slate-900">Global Reads
+</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#" className="text-slate-600 hover:text-slate-900 transition-colors">Каталог</a>
